@@ -60,6 +60,7 @@ body {
 .logo-navigation-userInfo-wrap {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 30px;
 }
 
 .logo-wrap {
@@ -76,7 +77,7 @@ body {
 
 .navigation-wrap {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     padding-top: 25px;
 }
 
@@ -92,15 +93,146 @@ body {
     border-bottom: 1px solid black;
 }
 
-
 .userInfo-wrap {
     display: flex;
     justify-content: center;
-    margin-right: 50px;
     padding-top: 20px;
+    padding-right: 50px;
 }
 
 .userInfo-wrap img {
     height: 28px;
     width: auto;
 }
+
+/* HEADLINE CONTENT STYLE */
+.iframe-wrap {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.iframe-wrap iframe {
+    transform: scale(1.4);
+}
+
+.headline-title-wrap {
+    position: relative;
+    visibility: hidden; /* removed until I can figure out how to keep it from clashing with goruck logo on background video */
+    top: -550px;
+    padding-left: 50px;
+    color: white;
+    width: 900px;
+}
+
+.headline-title-wrap h1 {
+    font-size: 6em;
+}
+
+.headline-subtitle-wrap {
+    position: relative;
+    top: -615px;
+    padding-left: 50px;
+    color: white;
+}
+
+.headline-subtitle-wrap p {
+    font-size: 1.5em;
+}
+
+.headline-button-wrap {
+    position: relative;
+    top: -615px;
+    left: 50px;
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline-button-wrap img {
+    height: 20px;
+    width: auto;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.headline-button-wrap a {
+    color: white;
+    text-decoration: underline transparent;
+    padding: 9px;
+}
+
+/* FORCED TO MAKE NEW DIV WITH RELATIVE POSITIONING */
+
+.remaining-page-content-wrap {
+    position: relative;
+    top: -375px;
+}
+
+/* CLOTHING STYLES */
+
+.clothing-title-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.clothing-title-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.clothing-title-button-wrap {
+    border: 1px solid rgb(225, 223, 223);
+    padding: 10px;
+}
+
+.clothing-title-button-wrap:hover {
+    border: 1px solid black;
+    transition: border 0.5s;
+}
+
+.clothing-title-button-wrap a {
+    color: black;
+    text-decoration: underline transparent;
+}
+
+.clothing-choices-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.clothing-shirts-wrap {
+    position: relative;
+}
+
+.clothing-shirts-wrap img {
+    height: 200px; 
+    width: auto;
+}
+
+.clothing-shirt-top-wrap {
+    position: relative;
+    top: -200px;
+}
+
+.clothing-shirt-top-wrap:hover {
+    opacity: 0%;
+}
+
+.clothing-shirt-top-wrap img {
+    height: 200px;
+    width: auto;
+}
+
+.clothing-shirt-bottom-wrap img {
+    height: 195px;
+    width: auto;
+}
+
+
