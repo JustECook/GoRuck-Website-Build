@@ -1,0 +1,654 @@
+/* MASTER STYLES */
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*--------------------- HOME PAGE STYLES-------------------------*/
+
+/* SHIPPING OFFER STYLES */
+
+.shipping-offer-wrap {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.shipping-offer-wrap p {
+    color: white;
+    font-size: 0.9em;
+}
+
+/* EVENTS AND SOCIAL MEDIA STYLES */
+.events-socialApps-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(237, 233, 233);
+}
+
+.events-wrap {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.events-wrap a {
+    padding-top: 10px;
+    padding-right: 25px;
+    text-decoration: underline transparent;
+    color: black;
+}
+
+.socialApps-wrap {
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.socialApp-wrap img {
+    height: 20px;
+    width: auto;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+/* NAVIGATION BAR STYLES */
+
+.logo-navigation-userInfo-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.logo-wrap {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+.logo-wrap img {
+    height: 32px; 
+    width: auto;
+}
+
+.navigation-wrap {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 25px;
+}
+
+.navigation-wrap a {
+    text-decoration: underline transparent;
+    color: black;
+    border-bottom: 1px solid black transparent;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navigation-wrap a:hover {
+    border-bottom: 1px solid black;
+}
+
+.userInfo-wrap {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+.userInfo-wrap img {
+    height: 28px;
+    width: auto;
+}
+
+/* HEADLINE CONTENT STYLE */
+.iframe-wrap {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.iframe-wrap iframe {
+    transform: scale(1.4);
+}
+
+.headline-title-wrap {
+    position: relative;
+    visibility: hidden; /* removed until I can figure out how to keep it from clashing with goruck logo on background video */
+    top: -550px;
+    padding-left: 50px;
+    color: white;
+    width: 900px;
+}
+
+.headline-title-wrap h1 {
+    font-size: 6em;
+}
+
+.headline-subtitle-wrap {
+    position: relative;
+    top: -615px;
+    margin-left: -1000px; /* Not sure why I had to do this...was working fine with padding-left = 50px */
+    color: white;
+}
+
+.headline-subtitle-wrap p {
+    font-size: 1.5em;
+}
+
+.headline-button-wrap {
+    position: relative;
+    top: -615px;
+    left: 50px;
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline-button-wrap img {
+    height: 20px;
+    width: auto;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.headline-button-wrap a {
+    color: white;
+    text-decoration: underline transparent;
+    padding: 9px;
+}
+
+/* FORCED TO MAKE NEW DIV WITH RELATIVE POSITIONING */
+
+.remaining-page-content-wrap {
+    position: relative;
+    top: -375px;
+}
+
+/* CLOTHING STYLES */
+
+.clothing-title-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.clothing-title-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.clothing-title-button-wrap {
+    border: 1px solid rgb(225, 223, 223);
+    padding: 10px;
+}
+
+.clothing-title-button-wrap:hover {
+    border: 1px solid black;
+    transition: border 0.5s;
+}
+
+.clothing-title-button-wrap a {
+    color: black;
+    text-decoration: underline transparent;
+}
+
+.clothing-choices-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.clothing-descriptions-wrap {
+    position: relative;
+    top: -175px;
+}
+
+.clothing-shirts-wrap {
+    position: relative;
+}
+
+.clothing-shirts-wrap img {
+    height: 200px; 
+    width: auto;
+}
+
+.clothing-shirt-top-wrap {
+    position: relative;
+    top: -200px;
+}
+
+.clothing-shirt-top-wrap:hover {
+    opacity: 0%;
+}
+
+.clothing-shirt-top-wrap img {
+    height: 200px;
+    width: auto;
+}
+
+.clothing-shirt-bottom-wrap img {
+    height: 195px;
+    width: auto;
+}
+
+.clothing-description-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 125px;
+}
+
+.clothing-description-wrap h1, p {
+    font-size: 0.95em;
+    text-align: center;
+}
+
+.clothing-color-choice-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.color-black {
+    height: 18px;
+    width: 18px;
+    background: black;
+    border: 2px white solid;
+    outline: rgb(225, 223, 223) 1px solid;
+}
+
+.color-green {
+    height: 18px;
+    width: 18px;
+    background: rgb(79, 96, 79);
+    border: 2px white solid;
+    outline: rgb(225, 223, 223) 1px solid;
+}
+
+.color-blue {
+    height: 18px;
+    width: 18px;
+    background: rgb(16, 43, 65);
+    border: 2px white solid;
+    outline: rgb(225, 223, 223) 1px solid;
+}
+
+.color-red {
+    height: 18px;
+    width: 18px;
+    background: rgb(106, 37, 37);
+    border: 2px white solid;
+    outline: rgb(225, 223, 223) 1px solid;
+}
+
+.color-yellow {
+    height: 18px;
+    width: 18px;
+    background: rgb(80, 80, 16);
+    border: 2px white solid;
+    outline: rgb(225, 223, 223) 1px solid;
+}
+
+.color-black:hover, .color-blue:hover, .color-green:hover, .color-red:hover, .color-yellow:hover {
+    outline: black solid 1px;
+    transition: outline 0.5s;
+}
+
+/* WHAT IS RUCKING STYLES */
+
+
+.what-is-rucking-wrap {
+    display: flex;
+    justify-content: center;
+    margin-left: -7px;
+}
+
+.what-is-rucking-wrap img {
+    width: 100%;
+}
+
+.rucking-definition-wrap {
+    position: relative;
+    top: -700px;
+    left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 350px;
+    background: white;
+}
+
+.rucking-definition-wrap p {
+    text-align: left;
+    font-size: 1.3em;
+    padding-right: 20px;
+    padding-left: 25px;
+}
+
+.rucking-definition-wrap a {
+    color: black;
+}
+
+.rucking-definition-button-wrap {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.rucking-definition-button-wrap a {
+    background: rgb(63, 94, 63);
+    color: white;
+    text-decoration: underline transparent;
+    padding: 15px 20px; 
+    font-weight: 600;
+}
+
+.rucking-definition-button-wrap a:hover {
+    background: green;
+    transition: background-color 0.5s;
+}
+
+.backpack-title-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: -300px;
+}
+
+.backpack-title-button-wrap {
+    border: 1px solid rgb(225, 223, 223);
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.backpack-title-button-wrap:hover {
+    border: 1px solid black;
+    transition: border 0.5s;
+}
+
+.backpack-title-button-wrap a {
+    text-decoration: underline transparent;
+    color: black;
+}
+
+.backpack-choices-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-left: 50px;
+}
+
+.backpack-description-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.backpack-description-wrap h1, p {
+    font-size: 0.95em;
+    text-align: center;
+}
+
+/* TRIBE N TRAIN STYLES */
+
+.tribe-n-train-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+}
+
+.tribe-n-train-img-wrap {
+    margin-left: 150px;
+}
+
+.tribe-n-train-img-wrap img {
+    height: 80%;
+    width: auto;
+}
+
+.tribe-n-train-text-wrap {
+    margin-right: 150px;
+    padding-top: 25px;
+}
+
+.tribe-n-train-text-wrap h1, p {
+    text-align: left;
+}
+
+.tribe-n-train-text-wrap h1 {
+    padding-left: 25px;
+}
+
+.tribe-n-train-text-wrap p {
+    font-size: 1.15em;
+}
+
+.tribe-n-train-button-wrap {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+
+.tribe-n-train-button-wrap a {
+    background: rgb(63, 94, 63);
+    color: white;
+    text-decoration: underline transparent;
+    padding: 15px 20px; 
+    font-weight: 600;
+}
+
+.tribe-n-train-button-wrap a:hover {
+    background: green;
+    transition: background-color 0.5s;
+}
+
+/* GORUCK EVENTS STYLES */
+
+.goruck-events-content {
+    margin-top: -50px;
+}
+
+.goruck-events-img-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.goruck-events-img-wrap img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.goruck-events-description-wrap {
+    position: relative;
+    top: -700px;
+    left: 950px;
+    width: 350px;
+}
+
+.goruck-events-text-wrap {
+    background: white;
+    padding: 10px;
+}
+
+.goruck-events-text-wrap p {
+    font-size: 1.15em;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.goruck-events-text-wrap h1 {
+    padding-left: 20px;
+}
+
+.goruck-events-text-wrap a {
+    color: black;
+}
+
+.goruck-events-button-wrap {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+}
+
+.goruck-events-button-wrap a {
+    background: rgb(63, 94, 63);
+    color: white;
+    text-decoration: underline transparent;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.goruck-events-button-wrap a:hover {
+    background: green;
+    transition: background-color 0.5s;
+}
+
+/* SCARS-CLUBS STYLES */
+
+.scars-clubs-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: -450px;
+    margin-bottom: 75px;
+}
+
+.scars-img-wrap {
+    padding-left: 50px;
+}
+
+.scars-img-wrap img {
+    width: 600px;
+    height: auto;
+}
+
+.scars-text-wrap {
+    padding-left: 50px;
+    padding-right: 100px;
+}
+
+.clubs-img-wrap {
+    padding-right: 50px;
+}
+
+.clubs-img-wrap img {
+    width: 600px;
+    height: auto;
+}
+
+.clubs-text-wrap {
+    padding-right: 75px;
+}
+
+.scars-button-wrap {
+    border: 1px solid rgb(225, 223, 223);
+    margin-left: 25px;
+    padding: 10px 15px;
+    width: fit-content;
+}
+
+.scars-button-wrap:hover {
+    border: 1px solid black;
+    transition: border 0.5s;
+}
+
+.scars-button-wrap a {
+    color: black;
+    text-decoration: underline transparent;
+}
+
+/* OUR STORY STYLES */
+
+
+.our-story-img-wrap {
+    overflow:hidden;
+}
+
+.our-story-img-wrap img {
+    width: 100%;
+    height: auto;
+}
+
+.our-story-text-wrap {
+    position: relative;
+    background: white;
+    margin-top: -650px;
+    margin-left:50px;
+    width: 350px;
+    padding-top: 10px;
+}
+
+.our-story-text-wrap h1, p {
+    color: black;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 1.15em;
+}
+
+.our-story-button-wrap {
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 40px;
+}
+
+.our-story-button-wrap a {
+    background: rgb(63, 94, 63);
+    color: white;
+    text-decoration: underline transparent;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.our-story-button-wrap a:hover {
+    background: green;
+    transition: background-color 0.5s; 
+}
+
+/* FOOTER STYLES */
+
+.footer-content {
+    position: relative;
+    top: 245px;
+    padding-top: 50px;
+    background: black;
+}
+
+.footer-texts-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-content-text-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-content-text-wrap p {
+    color: white;
+}
+
+.footer-content-text-wrap p > a {
+    color: white;
+    text-decoration: underline transparent;
+    font-size: 0.8em;
+}
+
+
+
