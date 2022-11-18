@@ -586,3 +586,32 @@ body {
     color: black;
 }
 
+/* FOOTER STYLES */
+
+.footer-content {
+    position: relative;
+    top: 245px;
+    padding-top: 50px;
+    background: black;
+}
+
+.footer-texts-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-content-text-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-content-text-wrap p {
+    color: white;
+}
+
+.footer-content-text-wrap p > a {
+    color: white;
+    text-decoration: underline transparent;
+    font-size: 0.8em;
+}
